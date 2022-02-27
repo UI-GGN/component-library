@@ -37,7 +37,7 @@ const Button = ({
   return (
     <button
       type="button"
-      className={['btn', `btn--${size},`, `btn--${variant}`].join(' ')}
+      className={['btn', `btn--${size}`, `btn--${variant}`].join(' ')}
       style={backgroundColor ? { backgroundColor } : {}}
       onClick={onClick}
     >
