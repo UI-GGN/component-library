@@ -1,0 +1,33 @@
+.text--small {
+  font-size: 8px;
+}
+.text--medium {
+  font-size: 12px;
+}
+.text--large {
+  font-size: 14px;
+}
+.text--h1 {
+  font-size: 20px;
+  font-weight: bold;
+}
+.text--h2 {
+  font-size: 24px;
+  font-weight: bold;
+}
+.text--h3 {
+  font-size: 28px;
+  font-weight: bold;
+}
+.text--h4 {
+  font-size: 32px;
+  font-weight: bold;
+}
+.text--h5 {
+  font-size: 36px;
+  font-weight: bold;
+}
+.text--h6 {
+  font-size: 40px;
+  font-weight: bold;
+}
