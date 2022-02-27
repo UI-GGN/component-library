@@ -9,7 +9,7 @@ export interface CardProps {
 const Card = ({ variant, backgroundColor, children }: CardProps) => (
   <div
     className={`card--${variant}`}
-    style={{ backgroundColor: backgroundColor }}
+    style={backgroundColor ? { backgroundColor } : {}}
   >
     {children}
   </div>
