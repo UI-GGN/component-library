@@ -1,0 +1,40 @@
+.btn {
+  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  border: 0;
+  border-radius: 3em;
+  cursor: pointer;
+  display: inline-block;
+  line-height: 1;
+}
+.btn--contained {
+  color: #fff;
+  background-color: #1ea7fd;
+}
+.btn--outlined {
+  color: #333;
+  background-color: transparent;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 0px 1px inset;
+  border: 1px solid #333;
+}
+.btn--text {
+  color: darkgreen;
+  background-color: transparent;
+  box-shadow: none;
+  border: 0;
+}
+.btn--sm {
+  font-size: 12px;
+  padding: 10px 16px;
+}
+.btn--md {
+  font-size: 14px;
+  padding: 11px 20px;
+}
+.btn--lg {
+  font-size: 16px;
+  padding: 12px 24px;
+}
+:root {
+  --primary: red;
+}
