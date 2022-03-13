@@ -2,6 +2,9 @@ import React from 'react';
 import './typography.css';
 
 export interface TypographyProps {
+  /**
+   * How large should the button be?
+   */
   textType?:
     | 'small'
     | 'medium'
@@ -12,6 +15,9 @@ export interface TypographyProps {
     | 'h4'
     | 'h5'
     | 'h6';
+  /**
+   * Button contents
+   */
   text: string;
 }
 
