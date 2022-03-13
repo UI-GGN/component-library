@@ -36,12 +36,12 @@ const Button = ({
 }: ButtonProps) => {
   return (
     <button
-      type="button"
+      type='button'
       className={['btn', `btn--${size}`, `btn--${variant}`].join(' ')}
       style={backgroundColor ? { backgroundColor } : {}}
       onClick={onClick}
     >
-      Welcome, {label}
+      {label}
     </button>
   );
 };
