@@ -28,7 +28,7 @@
     "babel-loader": "^8.2.3",
     "postcss": "^8.4.8",
     "rollup": "^2.68.0",
-    "rollup-plugin-dts": "^4.1.0",
+    "rollup-plugin-dts": "^4.2.0",
     "rollup-plugin-peer-deps-external": "^2.2.4",
     "rollup-plugin-postcss": "^4.0.2",
     "rollup-plugin-typescript2": "^0.31.2",
