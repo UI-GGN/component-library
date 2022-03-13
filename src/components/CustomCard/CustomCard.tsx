@@ -2,7 +2,7 @@ import React from 'react';
 import { Typography, Button } from '..';
 import './CustomCard.css';
 
-export interface CardProps {
+export interface CustomCardProps {
   /**
    * How the heading should look
    */
@@ -27,7 +27,7 @@ const CustomCard = ({
   subHeading,
   onSubmit,
   render = () => <></>,
-}: CardProps) => {
+}: CustomCardProps) => {
   return (
     <div className='card flex flex-column '>
       <div className='card--content'>
