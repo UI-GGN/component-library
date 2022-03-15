@@ -2502,7 +2502,9 @@ styleInject(css_248z$2);
  */
 var Button = function (_a) {
     var backgroundColor = _a.backgroundColor, _b = _a.size, size = _b === void 0 ? 'md' : _b, _c = _a.variant, variant = _c === void 0 ? 'contained' : _c, onClick = _a.onClick, label = _a.label;
-    return (React.createElement("button", { type: 'button', className: ['btn', "btn--".concat(size), "btn--".concat(variant)].join(' '), style: backgroundColor ? { backgroundColor: backgroundColor } : {}, onClick: onClick }, label));
+    return (React.createElement("button", { type: 'button', className: ['btn', "btn--".concat(size), "btn--".concat(variant)].join(' '), style: backgroundColor ? { backgroundColor: backgroundColor } : {}, onClick: onClick },
+        "Hello ",
+        label));
 };
 
 var css_248z$1 = ".card {\n  box-sizing: border-box;\n  box-shadow: 0px 0px 8px 0px #80808047;\n  height: 450px;\n  width: 450px;\n  padding: 20px;\n  border-radius: 5px;\n  background: #2196f330;\n  display: flex;\n  flex-direction: column;\n  justify-content: space-between;\n}\n.card--content {\n  display: flex;\n  box-sizing: border-box;\n}\n\n.card--content__tag {\n  width: 80px;\n  background: red;\n  text-align: center;\n  background: #ffa50066;\n  height: 30px;\n  border-radius: 5px;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n}\n\n.card--content .text--medium {\n  box-sizing: border-box;\n  padding: 10px;\n  font-weight: bold;\n  border-radius: 5px;\n  box-shadow: inset 0px 0px 0px 1px #80808047;\n  height: 40px;\n  flex: 80px 0;\n  display: flex;\n  justify-content: center;\n  background-color: burlywood;\n}\n.card--content .text--h6 {\n  box-sizing: border-box;\n  padding-right: 10px;\n  padding-bottom: 10px;\n  flex: 1;\n}\n\n.card-cta {\n  display: flex;\n}\n.card-cta .btn {\n  flex: 1;\n  margin: 20px;\n}\n";
