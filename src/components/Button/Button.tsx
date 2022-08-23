@@ -41,7 +41,7 @@ const Button = ({
       style={backgroundColor ? { backgroundColor } : {}}
       onClick={onClick}
     >
-      Hello, How are you {label}
+      Hello, How are you {label} ?
     </button>
   );
 };
