@@ -27,6 +27,12 @@ jobs:
       - name: Build packages
         run: |
           yarn build
+      - name: Upload npm package
+        uses: actions/upload-artifact@v3
+        with:
+          name: npm package
+          path: |
+            ./dist
   deploy:
     runs-on: ubuntu-latest
     environment: 'production'
@@ -37,6 +43,12 @@ jobs:
         uses: 'phips28/gh-action-bump-version@master'
         env:
           GITHUB_TOKEN: ${{ secrets.GIT_TOKEN }}
+      - name: Upload npm package
+        uses: actions/upload-artifact@v3
+        with:
+          name: package
+          path: |
+            ./dist
       - name: 'Package Publish'
         uses: JS-DevTools/npm-publish@v1
         with:
