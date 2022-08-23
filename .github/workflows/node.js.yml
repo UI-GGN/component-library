@@ -30,7 +30,7 @@ jobs:
       - name: Upload npm package
         uses: actions/upload-artifact@v3
         with:
-          name: npm package
+          name: npm-package
           path: |
             ./dist
   deploy:
@@ -43,12 +43,11 @@ jobs:
         uses: 'phips28/gh-action-bump-version@master'
         env:
           GITHUB_TOKEN: ${{ secrets.GIT_TOKEN }}
-      - name: Upload npm package
-        uses: actions/upload-artifact@v3
+      - name: Download math result for job 2
+        uses: actions/download-artifact@v3
         with:
-          name: package
-          path: |
-            ./dist
+          name: npm-package
+          path: ./dist
       - name: 'Package Publish'
         uses: JS-DevTools/npm-publish@v1
         with:
