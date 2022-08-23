@@ -43,7 +43,7 @@ jobs:
         uses: 'phips28/gh-action-bump-version@master'
         env:
           GITHUB_TOKEN: ${{ secrets.GIT_TOKEN }}
-      - name: Download math result for job 2
+      - name: Download npm-package for publishing
         uses: actions/download-artifact@v3
         with:
           name: npm-package
