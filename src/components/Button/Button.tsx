@@ -1,11 +1,11 @@
-import React from 'react';
-import './Button.css';
+import React from "react";
+import "./Button.css";
 
 export interface ButtonProps {
   /**
    * How the button should look
    */
-  variant?: 'outlined' | 'contained' | 'text';
+  variant?: "outlined" | "contained" | "text";
   /**
    * What background color to use
    */
@@ -13,7 +13,7 @@ export interface ButtonProps {
   /**
    * How large should the button be?
    */
-  size?: 'sm' | 'md' | 'lg';
+  size?: "sm" | "md" | "lg";
   /**
    * Button contents
    */
@@ -29,19 +29,19 @@ export interface ButtonProps {
  */
 const Button = ({
   backgroundColor,
-  size = 'md',
-  variant = 'contained',
+  size = "md",
+  variant = "contained",
   onClick,
   label,
 }: ButtonProps) => {
   return (
     <button
       type='button'
-      className={['btn', `btn--${size}`, `btn--${variant}`].join(' ')}
+      className={["btn", `btn--${size}`, `btn--${variant}`].join(" ")}
       style={backgroundColor ? { backgroundColor } : {}}
       onClick={onClick}
     >
-      Hello {label}
+      Hello, {label}
     </button>
   );
 };

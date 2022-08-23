@@ -16,7 +16,7 @@ interface ButtonProps {
     /**
      * How the button should look
      */
-    variant?: 'outlined' | 'contained' | 'text';
+    variant?: "outlined" | "contained" | "text";
     /**
      * What background color to use
      */
@@ -24,7 +24,7 @@ interface ButtonProps {
     /**
      * How large should the button be?
      */
-    size?: 'sm' | 'md' | 'lg';
+    size?: "sm" | "md" | "lg";
     /**
      * Button contents
      */

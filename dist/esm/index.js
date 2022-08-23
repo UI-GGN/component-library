@@ -2501,9 +2501,9 @@ styleInject(css_248z$2);
  * Primary UI component for user interaction
  */
 var Button = function (_a) {
-    var backgroundColor = _a.backgroundColor, _b = _a.size, size = _b === void 0 ? 'md' : _b, _c = _a.variant, variant = _c === void 0 ? 'contained' : _c, onClick = _a.onClick, label = _a.label;
-    return (React.createElement("button", { type: 'button', className: ['btn', "btn--".concat(size), "btn--".concat(variant)].join(' '), style: backgroundColor ? { backgroundColor: backgroundColor } : {}, onClick: onClick },
-        "Hello ",
+    var backgroundColor = _a.backgroundColor, _b = _a.size, size = _b === void 0 ? "md" : _b, _c = _a.variant, variant = _c === void 0 ? "contained" : _c, onClick = _a.onClick, label = _a.label;
+    return (React.createElement("button", { type: 'button', className: ["btn", "btn--".concat(size), "btn--".concat(variant)].join(" "), style: backgroundColor ? { backgroundColor: backgroundColor } : {}, onClick: onClick },
+        "Hello, ",
         label));
 };
 
